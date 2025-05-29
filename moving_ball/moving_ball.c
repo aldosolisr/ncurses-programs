@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
 
   initscr(); // init curses
   raw();
-  curs_set(0); // set cursor invicible
+  curs_set(0); // set cursor invisible
   halfdelay(1);
   noecho();
 
