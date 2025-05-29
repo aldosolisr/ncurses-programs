@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
 
     clear();
     mvprintw(ball.y, ball.x, "*");
-    // mvprintw(rows / 2, cols / 2, "x:%d\ty:%d", ball.x, ball.y);
+    mvprintw(0, 0, "x:%d\ty:%d", ball.x, ball.y);
     refresh();
   }
 
