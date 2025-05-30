@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
   initscr(); // init curses
   raw();
   curs_set(0); // set cursor invisible
-  halfdelay(1);
+  timeout(0);
   noecho();
 
   getmaxyx(stdscr, rows, cols);
@@ -25,6 +25,7 @@ int main(int argc, char *argv[]) {
   ball.x = cols / 2;
 
   while ((input = getch()) != 'q') {
+    usleep(80000);
     switch (input) {
     case 'w':
       ball.dy = -1;
